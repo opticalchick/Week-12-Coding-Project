@@ -80,10 +80,16 @@ class DOMManager {
                             <button id="${toolType.id}-new-tool" onclick="DOMManager.addTool('${toolType.id}')" class="btn btn-info ">Add Tool</button>
                         </div>
                     </div>
-                  </div>
-                  <br>`
+                  </div><br>`
             );
-            for (left tool of toolType.)
+            for (let tool of toolType.tools) {
+                $(`#${toolType.id}`).find('.card-body').append(
+                    `<p>
+                    <span id ="name-${toolName.id}"><strong>Name:  </strong> ${toolName.name}</span>
+                    <span id ="name-${toolName.id}"><strong>Quantity:  </strong> ${toolName.quantity}</span>
+                    <button class="btn btn-danger" onclick="DOMManager.deleteTool('${toolType.id}', '${toolName.id})">Delete Tool</button>`
+                );
+            }
         }
     }
 }

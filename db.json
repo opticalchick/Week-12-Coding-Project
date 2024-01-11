@@ -1,0 +1,89 @@
+{
+    "kitchenTools": [
+        {
+            "toolType": "Cookware",
+            "id": 1,
+            "tools": [
+                {
+                    "toolName": "14 inch Hexclad pan",
+                    "quantity": 1,
+                    "id": 1
+                },
+                {
+                    "toolName": "Cast Iron Wok",
+                    "quantity": 1,
+                    "id": 2
+                },
+                {
+                    "toolName": "12 inch cast iron skillet",
+                    "quantity": 1,
+                    "id": 3
+                }
+            ]
+        },
+        {
+            "toolType": "Bakeware",
+            "id": 2,
+            "tools": [
+                {
+                    "toolName": "Aluminum Half Sheet Baking Pan",
+                    "quantity": 4,
+                    "id": 1
+                },
+                {
+                    "toolName": "9 x 13 ceramic baking dish",
+                    "quantity": 1,
+                    "id": 2
+                },
+                {
+                    "toolName": "9 x 13 covered aluminum baking pan",
+                    "quantity": 1,
+                    "id": 3
+                }
+            ]
+        },
+        {
+            "toolType": "Small Appliances",
+            "id": 3,
+            "tools": [
+                {
+                    "toolName": "KitchenAid Stand Mixer",
+                    "quantity": 2,
+                    "id": 1
+                },
+                {
+                    "toolName": "Immersion Blender",
+                    "quantity": 1,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "toolType": "Hand Tools",
+            "id": 4,
+            "tools": [
+                {
+                    "toolName": "Vegetable Peeler",
+                    "quantity": 2,
+                    "id": 1
+                },
+                {
+                    "toolName": "Garlic Press",
+                    "quantity": 1,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "toolType": "Specialty Items",
+            "id": 5,
+            "tools": [
+                {
+                    "toolName": "12 inch aluminum cake turntable",
+                    "quantity": 1,
+                    "id": 1
+                }
+            ]
+        }
+    ]
+}
