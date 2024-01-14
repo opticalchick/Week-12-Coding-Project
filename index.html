@@ -7,19 +7,89 @@
     <title>Kitchen Tools App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+<h1 class="text-center mt-3">Kitchen Tools App</h1><br>
 
-<body id="main-body" class="container bg-secondary text-black">
-    <h1 class="text-center">Kitchen Tools App</h1>
-    <div id="new-tool-type" class="container bg-secondary text-black">
-        <h3>Kitchen Tool Type</h3>
-        <input type="text" id="new-tool-type-name" class="form-control"
-            placeholder="Example: Bakeware, Cookware, Small Appliance, etc..."><br>
-        <div class="text-center">
-            <button id="create-new-tool-type" class="btn btn-info">Create New Kitchen Tool Type</button>
+<body class="container" style="background-color: gray;">
+    <br>
+    <div class="card" style="background-color: lightgray;">
+        <div class="card=body">
+            <!-- //bootstrap styling used to add padding for spacing within the container for the table element -->
+            <div class="row" style="padding-top: 25px; padding-left: 25px; padding-right: 25px;">
+                <div class="col-lg">
+                    <div class="form-group">
+                        <label for="tool-name">Tool Name</label>
+                        <!-- //placeholders used to give example of input to user -->
+                        <input type="text" class="form-control" id="tool-name" placeholder="Item name/description" ;>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 25px;">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="tool-quantity">Tool Quantity</label>
+                        <input type="text" class="form-control" id="tool-quantity" placeholder="Enter Quantity" ;>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" class="form-control" id="category" placeholder="Cookware, Bakeware, etc..."
+                            ;>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-bottom: 25px;">
+                <button id="add-kitchen-tool" class="btn btn-info">Add New Kitchen Tool</button>
+            </div>
         </div>
     </div><br><br>
-
-    <div id="app">
+    <div class="card" style="background-color: lightgray;">
+        <div class="card=body">
+            <!-- //bootstrap styling used to add padding for spacing within the container for the table element -->
+            <div class="row" style="padding-top: 25px; padding-left: 25px; padding-right: 25px;">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="update-tool-id">Tool ID</label>
+                        <!-- //placeholders used to give example of input to user -->
+                        <input type="text" class="form-control" id="update-tool-id" placeholder="Tool ID" ;>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="update-tool-name">Tool Name</label>
+                        <input type="text" class="form-control" id="update-tool-name" placeholder="Tool Name">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 25px;">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="update-tool-quantity">Update Tool Quantity</label>
+                        <input type="text" class="form-control" id="update-tool-quantity" placeholder="Enter Quantity"
+                            ;>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="update-category">Update Category</label>
+                        <input type="text" class="form-control" id="update-category"
+                            placeholder="Cookware, Bakeware, etc..." ;>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="padding-bottom: 25px;">
+                <button id="update" class="btn btn-info">Update Kitchen Tool</button>
+            </div>
+        </div>
+    </div><br><br>
+    <table id="tool-list" class="table table-dark table-striped">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tool Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Category</th>
+            <th scope="col"></th>
+    </table>
 
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
