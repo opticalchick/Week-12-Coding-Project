@@ -7,7 +7,10 @@
     <title>Kitchen Tools App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+<!-- main header centered with bootstrap  -->
+
 <h1 class="text-center mt-3">Kitchen Tools App</h1><br>
+<!-- form and table inside of the main body container.  Styled with bootstrap -->
 
 <body class="container" style="background-color: gray;">
     <br>
@@ -16,6 +19,7 @@
             <!-- //bootstrap styling used to add padding for spacing within the container for the table element -->
             <div class="row" style="padding-top: 25px; padding-left: 25px; padding-right: 25px;">
                 <div class="col-lg">
+                    <!-- this is the form to input information to create tool -->
                     <div class="form-group">
                         <label for="tool-name">Tool Name</label>
                         <!-- //placeholders used to give example of input to user -->
@@ -32,9 +36,9 @@
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="category">Category</label>
-                        <input type="text" class="form-control" id="category" placeholder="Cookware, Bakeware, etc..."
-                            ;>
+                        <label for="tool-category">Category</label>
+                        <input type="text" class="form-control" id="tool-category"
+                            placeholder="Cookware, Bakeware, etc..." ;>
                     </div>
                 </div>
             </div>
@@ -43,15 +47,17 @@
             </div>
         </div>
     </div><br><br>
-    <div class="card" style="background-color: lightgray;">
+
+    <!-- commented out the form used for updating tool since I couldn't get this to work -->
+    <!-- <div class="card" style="background-color: lightgray;">
         <div class="card=body">
-            <!-- //bootstrap styling used to add padding for spacing within the container for the table element -->
-            <div class="row" style="padding-top: 25px; padding-left: 25px; padding-right: 25px;">
+            //bootstrap styling used to add padding for spacing within the container for the table element -->
+    <!-- <div class="row" style="padding-top: 25px; padding-left: 25px; padding-right: 25px;">
                 <div class="col-sm">
                     <div class="form-group">
                         <label for="update-tool-id">Tool ID</label>
-                        <!-- //placeholders used to give example of input to user -->
-                        <input type="text" class="form-control" id="update-tool-id" placeholder="Tool ID" ;>
+                         //placeholders used to give example of input to user -->
+    <!-- <input type="text" class="form-control" id="update-tool-id" placeholder="Tool ID" ;>
                     </div>
                 </div>
                 <div class="col-md">
@@ -78,10 +84,13 @@
                 </div>
             </div>
             <div class="text-center" style="padding-bottom: 25px;">
-                <button id="update" class="btn btn-info">Update Kitchen Tool</button>
+                <button id="update-kitchen-tool" class="btn btn-info">Update Kitchen Tool</button>
             </div>
         </div>
-    </div><br><br>
+    </div><br><br> -->
+
+
+    <!-- table where the rendered information from API is displayed.  Styled with bootstrap -->
     <table id="tool-list" class="table table-dark table-striped">
         <tr>
             <th scope="col">ID</th>
